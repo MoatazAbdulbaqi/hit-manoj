@@ -1,0 +1,58 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	user-select: none !important;
+	background-color: skyblue;
+}
+
+#main-container {
+  position: relative;
+  margin: 0 auto;
+  width: 50vw;
+  height: 100vh;
+
+  background-image: url('./mother-fucker.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  overflow: hidden;
+}
+.fly {
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	transition: 1.5s;
+	background-color: #000;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+	-webkit-transition: 1.5s;
+	-moz-transition: 1.5s;
+	-ms-transition: 1.5s;
+	-o-transition: 1.5s;
+	opacity: 0;
+	mix-blend-mode: multiply;
+	animation: beAlive 1s linear 0s 1 forwards;
+	-webkit-animation: beAlive 1s linear 0s 1 forwards;
+}
+.fly img {
+	width: 100%;
+	height: 100%;
+}
+.fly.killed {
+	border-radius: 0;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	-ms-border-radius: 0;
+	-o-border-radius: 0;
+	width: 33px;
+	height: 33px;
+}
+@keyframes beAlive {
+	to {
+		opacity: 1;
+	}
+}
